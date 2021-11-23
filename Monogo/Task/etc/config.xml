@@ -3,6 +3,7 @@
     <default>
         <monogo_weather>
             <general>
+                <api_link><![CDATA[https://api.openweathermap.org/data/2.5/weather?q=london&appid=2c2a9ef6d4e8ed713cc9fcf2e3106a4a]]></api_link>
                 <cron_schedule>*/10 * * * *</cron_schedule>
             </general>
         </monogo_weather>
