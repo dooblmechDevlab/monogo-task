@@ -31,8 +31,7 @@ class WeatherUpdate
         SerializerInterface  $serializer,
         WeatherLogRepository $weatherLogRepository,
         Api                  $weatherApi
-    )
-    {
+    ) {
         $this->weatherLogFactory = $weatherLogFactory;
         $this->serializer = $serializer;
         $this->weatherLogRepository = $weatherLogRepository;

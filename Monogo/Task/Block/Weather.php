@@ -45,8 +45,7 @@ class Weather extends Template
         CollectionFactory     $collectionFactory,
         SortOrderBuilder      $sortOrderBuilder,
         array                 $data = []
-    )
-    {
+    ) {
         $this->weatherLogRepository = $weatherLogRepository;
         $this->searchCriteriaBuilder = $searchCriteriaBuilder;
         $this->collectionFactory = $collectionFactory;

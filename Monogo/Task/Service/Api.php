@@ -25,8 +25,7 @@ class Api
     public function __construct(
         Config $config,
         Curl $curl
-    )
-    {
+    ) {
         $this->config = $config;
         $this->curl = $curl;
     }
