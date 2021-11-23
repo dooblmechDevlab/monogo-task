@@ -1,0 +1,17 @@
+<?php
+/** @var \Monogo\Task\Block\Weather $block */
+/** @var \Monogo\Task\Api\Data\WeatherLogInterface $weatherLog */
+$weatherLog = $block->getLastWeatherData();
+?>
+<?php if ($weatherLog) :?>
+    <div><?= __("Weather in London")?></div>
+    </br>
+    <div><?= $weatherLog->getDescription()?></div>
+    </br>
+    <div><?= __('Temperature %1°C - %2°C', $weatherLog->getTempMin(), $weatherLog->getTempMax())?></div>
+    </br>
+    <div><?= __('Feels like %1°C', $weatherLog->getFeelsLike())?></div>
+    </br>
+    <div><?= __('Wind speed %1', $weatherLog->getWindSpeed())?></div>
+    </br>
+<?php endif; ?>

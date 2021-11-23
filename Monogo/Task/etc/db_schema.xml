@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="api_sync_weather">
+        <column xsi:type="int" name="id" unsigned="true" nullable="false" comment="ID" identity="true" />
+
+        <column xsi:type="datetime" name="timestamp" default="CURRENT_TIMESTAMP" nullable="false" comment="Timestamp"/>
+        <column xsi:type="varchar" name="main_description" nullable="true" comment="Main Description"/>
+        <column xsi:type="varchar" name="description" nullable="true" comment="Description"/>
+        <column xsi:type="float" name="wind_speed" nullable="true" comment="Wind Speed"/>
+        <column xsi:type="float" name="clouds" nullable="true" comment="Clouds"/>
+        <column xsi:type="float" name="temp" nullable="true" comment="Temp"/>
+        <column xsi:type="float" name="feels_like" nullable="true" comment="Feels Like"/>
+        <column xsi:type="float" name="temp_min" nullable="true" comment="Temp Min"/>
+        <column xsi:type="float" name="temp_max" nullable="true" comment="Temp Max"/>
+
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="id" />
+        </constraint>
+        <constraint xsi:type="unique" referenceId="ASDFDFDSFSDFSDF">
+            <column name="id"/>
+        </constraint>
+    </table>
+</schema>

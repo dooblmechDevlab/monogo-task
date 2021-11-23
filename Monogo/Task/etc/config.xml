@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <monogo_weather>
+            <general>
+                <cron_schedule>*/10 * * * *</cron_schedule>
+            </general>
+        </monogo_weather>
+    </default>
+</config>
